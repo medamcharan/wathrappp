@@ -1,38 +1,55 @@
 .App {
   text-align: center;
+ 
+  width: 100%;
+  height: 100vh;
+}
+.bg{
+  background-image:url(../public/bg.avif) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: "full"; /* This ensures the background covers the entire viewport height */
+  margin: 0; /* Remove default body margin */
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-app {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 16px;
+  width: 200px;
+  margin-right: 10px;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2196f3;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.grid-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-item {
+
+  flex: 1;
+  padding: 20px;
+ 
+  border-radius: 5px;
+  margin-right: 10px;
 }

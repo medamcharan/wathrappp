@@ -8,7 +8,7 @@
   background-image:url(../public/bg.avif) ;
   background-size: cover;
   background-repeat: no-repeat;
-  height: "full"; /* This ensures the background covers the entire viewport height */
+  height: 100%; /* This ensures the background covers the entire viewport height */
   margin: 0; /* Remove default body margin */
 
 }
@@ -29,6 +29,7 @@
   font-size: 16px;
   width: 200px;
   margin-right: 10px;
+
 }
 
 .submit-btn {

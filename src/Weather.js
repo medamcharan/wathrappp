@@ -5,9 +5,8 @@ import WeatherCondition from './Wc';
 import SunriseSunset from './Rise';
 import Humidity from "./Humidity";
 import Coordinates from "./Coordinates";
-import './App.css'; 
+import './dd.css'; 
 import Grid from '@mui/material/Grid';
-
 
 const Weather = () => {
   const [city, setCity] = useState("");
@@ -75,23 +74,35 @@ const Weather = () => {
         />
       </form>
       <Grid container spacing={2} className="grid-container">
-        <Grid item xs={12} sm={4}  lg={2} className="grid-item">
-          <Temperature temp={temp} />
+        <Grid item xs={12} sm={4} lg={2} className="grid-item">
+          <div className="glass-card">
+            <Temperature temp={temp} />
+          </div>
         </Grid>
         <Grid item xs={12} sm={4} lg={2} className="grid-item">
-          <WindSpeed windSpeed={windSpeed} />
+          <div className="glass-card">
+            <WindSpeed windSpeed={windSpeed} />
+          </div>
         </Grid>
         <Grid item xs={12} sm={4} lg={2} className="grid-item">
-          <WeatherCondition weatherCondition={weatherCondition} />
+          <div className="glass-card">
+            <WeatherCondition weatherCondition={weatherCondition} />
+          </div>
         </Grid>
-        <Grid item xs={12} sm={4}  lg={2} className="grid-item">
-          <SunriseSunset sunrise={sunrise} sunset={sunset} />
+        <Grid item xs={12} sm={4} lg={2} className="grid-item">
+          <div className="glass-card">
+            <SunriseSunset sunrise={sunrise} sunset={sunset} />
+          </div>
         </Grid>
-        <Grid item xs={12} sm={4}  lg={2} className="grid-item">
-          <Humidity humidity={humidity} />
+        <Grid item xs={12} sm={4} lg={2} className="grid-item">
+          <div className="glass-card">
+            <Humidity humidity={humidity} />
+          </div>
         </Grid>
-        <Grid item xs={12} sm={4}  lg={2} className="grid-item">
-          <Coordinates lon={coordinates.lon} lat={coordinates.lat} />
+        <Grid item xs={12} sm={4} lg={2} className="grid-item">
+          <div className="glass-card">
+            <Coordinates lon={coordinates.lon} lat={coordinates.lat} />
+          </div>
         </Grid>
       </Grid>
     </div>
